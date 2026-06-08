@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms - Repair & Maintenance</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        h2 {
+            color: #555;
+            margin-top: 30px;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+
+        form {
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #007bff;
+            background-color: #f0f8ff;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+            font-family: Arial, sans-serif;
+        }
+
+        textarea:focus {
+            outline: none;
+            border-color: #007bff;
+            background-color: #f0f8ff;
+        }
+    </style> -->
+</head>
+
+<body>
+    <header>
+        <h1>JoshTechShop - Electronics Shop</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./location.html">Location</a></li>
+            <li><a href="./menu.html">Catalog</a></li>
+            <li><a href="./form.html">Forms</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h2>Repair & Customer Support Request</h2>
+        <form>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="First & Last Name" required>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" required>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" placeholder="Street Address, City, State, ZIP Code" required>
+            <label for="issue-type">Issue Type:</label>
+            <input type="text" id="issue-type" list="issue-types" name="issue-type"
+                placeholder="e.g., Repair, Customer Issue, etc" required>
+            <datalist id="issue-types">
+                <option value="Repair">
+                <option value="Customer Issue">
+                <option value="Other">
+            </datalist>
+            <label for="description">Issue Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+        </form>
+
+        <h2>Admin Login</h2>
+        <form>
+            <label for="admin-username">Username:</label>
+            <input type="text" id="admin-username" name="admin-username" required>
+            <label for="admin-password">Password:</label>
+            <input type="password" id="admin-password" name="admin-password" required>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2026 JoshTechShop</p>
+    </footer>
+</body>
+
+</html>

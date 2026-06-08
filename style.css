@@ -3,7 +3,8 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100dvh; /* makes page as tall as viewpoint (browser window) */
+    min-height: 100dvh;
+    /* makes page as tall as viewpoint (browser window) */
     background-color: #90050f;
 }
 
@@ -24,10 +25,12 @@ nav {
     align-items: center;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
-    list-style: none; /* remove bullet points from list */
+    list-style: none;
+    /* remove bullet points from list */
     margin: 0;
     padding: 0;
     display: flex;
@@ -36,17 +39,22 @@ nav ul {
 
 nav a {
     color: #2c3e50;
-    text-decoration: none; /* remove underline from links */
+    text-decoration: none;
+    /* remove underline from links */
     font-weight: bold;
 }
 
 nav a:hover {
-    text-decoration: underline; /* underline link on hover */
+    text-decoration: underline;
+    /* underline link on hover */
 }
 
 main {
-    margin: 0 0; /* centers */
-    flex: 1; /* grow main's container to fill page so footer is at the bottom */
+    margin: 0 0;
+    padding-bottom: 20px;
+    /* centers */
+    flex: 1;
+    /* grow main's container to fill page so footer is at the bottom */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -55,7 +63,7 @@ main {
 
 main h2 {
     margin-top: 20px;
-    margin-bottom: 0;
+    margin-bottom: 20px;
 }
 
 main p {
@@ -73,7 +81,21 @@ main iframe {
     margin: 20px 0;
     max-width: 100%;
     height: auto;
-    aspect-ratio: 16/9; /* 16:9 aspect ratio for YouTube videos */
+    aspect-ratio: 16/9;
+    /* 16:9 aspect ratio for YouTube videos */
+}
+
+main form {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+    font-weight: bold;
 }
 
 footer {
@@ -90,6 +112,7 @@ footer p {
 
 /* Mobile Responsive Design */
 @media (max-width: 768px) {
+
     /* Stack menu columns vertically */
     nav ul {
         flex-direction: column;
