@@ -103,6 +103,21 @@ main form {
     font-weight: bold;
 }
 
+main button {
+    background-color: #90050f;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main button:hover {
+    background-color: #70040b;
+    transform: scale(1.05);
+    transition: transform 0.2s;
+}
+
 footer {
     background-color: #90050f;
     text-align: center;
