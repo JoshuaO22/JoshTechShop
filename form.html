@@ -1,6 +1,7 @@
 <!-- 
     Developer: Joshua Odom
     Website link: https://joshuao22.github.io/JoshTechShop/
+    Source Link: https://github.com/JoshuaO22/JoshTechShop
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -10,13 +11,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms - Repair & Maintenance</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
 </head>
 
 <body>
     <header>
         <h1>JoshTechShop - Electronics Shop</h1>
     </header>
-
     <nav>
         <ul>
             <li><a href="./index.html">Home</a></li>
@@ -25,10 +26,9 @@
             <li><a href="./form.html">Forms</a></li>
         </ul>
     </nav>
-
     <main class="container">
         <h2>Repair & Customer Support Request</h2>
-        <form>
+        <form id="request-form">
             <label for="name">Full Name:</label>
             <input type="text" id="name" name="name" placeholder="First & Last Name" required>
             <label for="email">Email Address:</label>
@@ -47,14 +47,16 @@
             </datalist>
             <label for="description">Issue Description:</label>
             <textarea id="description" name="description" rows="4" required></textarea>
+            <button type="submit">Submit Request</button>
         </form>
 
         <h2>Admin Login</h2>
-        <form>
-            <label for="admin-username">Username:</label>
-            <input type="text" id="admin-username" name="admin-username" required>
-            <label for="admin-password">Password:</label>
-            <input type="password" id="admin-password" name="admin-password" required>
+        <form id="admin-login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
         </form>
     </main>
     <footer>
